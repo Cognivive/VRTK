@@ -2,17 +2,17 @@
 > ### VRTK - Virtual Reality Toolkit
 > A productive VR Toolkit for rapidly building VR solutions in Unity3d.
 
-[![Slack](http://sysdia2.co.uk/badge.svg)](http://invite.vrtk.io)
+[![Slack](https://img.shields.io/badge/slack-chat-E24663.svg)](http://invite.vrtk.io)
 [![Documentation](https://img.shields.io/badge/readme-docs-3484C6.svg)](http://docs.vrtk.io)
-[![Twitter Follow](https://img.shields.io/twitter/follow/vr_toolkit.svg?style=flat&label=twitter)](https://twitter.com/VR_Toolkit)
 [![YouTube](https://img.shields.io/badge/youtube-channel-e52d27.svg)](http://videos.vrtk.io)
+[![Twitter Follow](https://img.shields.io/twitter/follow/vr_toolkit.svg?style=flat&label=twitter)](https://twitter.com/VR_Toolkit)
 [![Waffle](https://img.shields.io/badge/project-backlog-78bdf2.svg)](http://tracker.vrtk.io)
 
 | Supported SDK | Download Link |
 |---------------|---------------|
 | UnityEngine.VR | _Core Unity3d library_ |
 | VR Simulator | _Included_ |
-| SteamVR | [SteamVR Plugin] |
+| SteamVR 1.2.3 | [SteamVR Plugin] |
 | Oculus | [Oculus Integration] |
 | Windows Mixed Reality | [Windows Mixed Reality For Unity] |
 | * Ximmerse | [Ximmerse Unity SDK] |
@@ -20,6 +20,8 @@
 | * HyperealVR | [Hypereal VR Unity Plugin]
 
 _* unsupported/experimental_
+
+> *NOTE:* SteamVR 2 is not supported.
 
 ## Documentation
 
@@ -44,10 +46,6 @@ see if your query has already been answered.
  * Download or clone this repository.
  * Open the folder in Unity to load the project.
  * Have a look at the included example scenes.
-
-**Important Note**
-
-> The example scenes no longer contain the `VRTK_SDKManager` as this is loaded in at runtime via the `VRTK_SDKManager_Constructor` scene. As the `VRTK_SDKManager` script is responsible for setting up the required Unity Scripting Define Symbols for installed SDKs it is required that the `VRTK_SDKManager_Constructor` scene is opened in the Unity Editor when first using the project or when installing a new supported SDK so it can set up the scripting define symbols. The example scenes will not work until the scripting define symbols have been set up correctly so please ensure that the `VRTK_SDKManager_Constructor` scene is loaded into the Unity Editor first.
 
 The example scenes support all the VRTK supported VR SDKs. To make use
 of VR devices (besides the included VR Simulator) import the needed
@@ -116,7 +114,7 @@ Code released under the [MIT License].
 
 Any Third Party Licenses can be viewed in [THIRD_PARTY_NOTICES.md].
 
-[SteamVR Plugin]: https://assetstore.unity.com/packages/templates/systems/steamvr-plugin-32647
+[SteamVR Plugin]: https://github.com/ValveSoftware/steamvr_unity_plugin/releases/download/1.2.3/SteamVR.Plugin.unitypackage
 [SteamVR Plugin for Unity3d Github Repo]: https://github.com/ValveSoftware/openvr/tree/master/unity_package/Assets/SteamVR
 [Oculus Integration]: https://assetstore.unity.com/packages/tools/integration/oculus-integration-82022
 [Ximmerse Unity SDK]: https://github.com/Ximmerse/SDK/tree/master/Unity
